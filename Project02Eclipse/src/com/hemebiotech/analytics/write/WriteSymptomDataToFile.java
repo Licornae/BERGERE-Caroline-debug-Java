@@ -8,10 +8,21 @@ import java.util.Map;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+/**
+ * WriteSymptomDataToFile is a class that writes the symptoms and their occurrences to a file.
+ * It implements the ISymptomWriter interface.
+ * 
+ * @see ISymptomWriter
+ */
 public class WriteSymptomDataToFile implements ISymptomWriter {
 	
 		private static Logger logger = LogManager.getLogger(WriteSymptomDataToFile.class);
 		
+		/**
+		 * This method writes the symptoms and their occurrences to a file.
+		 * 
+		 * @param symptoms is a map that contains the symptoms and their occurrences.
+		 */
 		@Override
 		public void writeSymptoms(Map<String, Integer> symptoms) {
 			
